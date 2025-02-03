@@ -1171,6 +1171,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
+					"hidden" : 1,
 					"order" : 1,
 					"source" : [ "obj-49", 1 ]
 				}
