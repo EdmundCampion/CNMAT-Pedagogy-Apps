@@ -2,15 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 0,
-			"revision" : 3,
+			"major" : 8,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 9.0, 51.0, 1181.0, 786.0 ],
-		"bgcolor" : [ 0.811765, 0.811765, 0.811765, 1.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 61.0, 53.0, 1181.0, 786.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,17 +37,19 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"title" : "plucked string playspace",
 		"boxes" : [ 			{
 				"box" : 				{
 					"hidden" : 1,
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 536.0, 610.0, 69.0, 22.0 ],
-					"style" : "",
-					"text" : "m29dspinit"
+					"id" : "obj-8",
+					"linecount" : 6,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 536.0, 669.0, 101.0, 89.0 ],
+					"text" : ";\rdsp iovs 512,;\rdsp sigvs 512,;\rdsp sr 44100,;\rmax preempt 1,;\rdsp takeover 0"
 				}
 
 			}
@@ -60,8 +62,9 @@
 					"enablevscroll" : 0,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "monocords_timbre.maxpat",
+					"name" : "monocords_timbre_ped.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 3.0, -4.0 ],
@@ -81,8 +84,9 @@
 					"enablevscroll" : 0,
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "monocords.maxpat",
+					"name" : "monocords_ped.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -100,7 +104,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 284.0, 424.0, 129.0, 22.0 ],
-					"style" : "",
 					"text" : "global controls:"
 				}
 
@@ -114,8 +117,9 @@
 					"enablevscroll" : 0,
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "5-probability_player.maxpat",
+					"name" : "5-probability_player_ped.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -134,8 +138,9 @@
 					"enablevscroll" : 0,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "3-tuner.maxpat",
+					"name" : "3-tuner_ped.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ -15.0, -25.0 ],
@@ -154,8 +159,9 @@
 					"enablevscroll" : 0,
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "4-sequencer.maxpat",
+					"name" : "4-sequencer_ped.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -174,8 +180,9 @@
 					"enablevscroll" : 0,
 					"id" : "obj-5",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "monocords_transport.maxpat",
+					"name" : "monocords_transport_ped.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -187,142 +194,129 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "monocords_transport.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Tuning_and_Temperament/Monocord/lib",
-				"patcherrelativepath" : "../../Tuning_and_Temperament/Monocord/lib",
+				"name" : "3-tuner_ped.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "4-sequencer.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Tuning_and_Temperament/Monocord",
-				"patcherrelativepath" : "../../Tuning_and_Temperament/Monocord",
+				"name" : "4-sequencer_ped.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "5-probability_player_ped.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "8harp_player.xml",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/media",
-				"patcherrelativepath" : "../../../../media",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "3-tuner.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Tuning_and_Temperament/Monocord",
-				"patcherrelativepath" : "../../Tuning_and_Temperament/Monocord",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "clock_diagram.js",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/jsui",
-				"patcherrelativepath" : "../../../../jsui",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/XML",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/XML",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "8harp_tuner.xml",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/media",
-				"patcherrelativepath" : "../../../../media",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/XML",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/XML",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "monocords_fundamental.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Tuning_and_Temperament/Monocord/lib",
-				"patcherrelativepath" : "../../Tuning_and_Temperament/Monocord/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "namespace_adjuster.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Tuning_and_Temperament/Monocord/lib",
-				"patcherrelativepath" : "../../Tuning_and_Temperament/Monocord/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "5-probability_player.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Tuning_and_Temperament/Monocord",
-				"patcherrelativepath" : "../../Tuning_and_Temperament/Monocord",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "monocords.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Tuning_and_Temperament/Monocord/lib",
-				"patcherrelativepath" : "../../Tuning_and_Temperament/Monocord/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "harp02.js",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/jsui",
-				"patcherrelativepath" : "../../../../jsui",
+				"name" : "clock_diagram_ped.js",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "one_string.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Tuning_and_Temperament/Monocord/lib",
-				"patcherrelativepath" : "../../Tuning_and_Temperament/Monocord/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reso-string~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/patchers/synthesis/reso-string~",
-				"patcherrelativepath" : "../../../../patchers/synthesis/reso-string~",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "coll-listdumper.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/patchers/data_storage",
-				"patcherrelativepath" : "../../../../patchers/data_storage",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/data/functions/conversions",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/patchers/data/functions/conversions",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "harp02_ped.js",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "letter.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/patchers/interface",
-				"patcherrelativepath" : "../../../../patchers/interface",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/io",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "monocords_timbre.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Tuning_and_Temperament/Monocord/lib",
-				"patcherrelativepath" : "../../Tuning_and_Temperament/Monocord/lib",
+				"name" : "monocords_fundamental_ped.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "m29dspinit.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/extras/tutorials/Music29/Misc Support",
-				"patcherrelativepath" : "../Misc Support",
+				"name" : "monocords_ped.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
+				"name" : "monocords_timbre_ped.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "monocords_transport_ped.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "o.pack.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "resonators~.mxo",
+				"name" : "o.route.mxo",
 				"type" : "iLaX"
+			}
+, 			{
+				"name" : "one_string_ped.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies/Monocord-pedagogy",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "res-transform.mxo",
 				"type" : "iLaX"
 			}
+, 			{
+				"name" : "reso-string~.maxpat",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/patchers/synthesis/CNMAT_sinusoids_resonators",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/patchers/synthesis/CNMAT_sinusoids_resonators",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "resonators~.mxo",
+				"type" : "iLaX"
+			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0,
+		"bgcolor" : [ 0.811765, 0.811765, 0.811765, 1.0 ]
 	}
 
 }
