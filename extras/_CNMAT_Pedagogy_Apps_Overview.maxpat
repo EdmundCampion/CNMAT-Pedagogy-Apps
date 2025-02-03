@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 66.0, 1039.0, 955.0 ],
+		"rect" : [ 8.0, 66.0, 946.0, 656.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,12 +41,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-47",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 862.0, 582.5, 81.0, 74.0 ],
-					"text" : "Click to open folder with asociated\nsoundfile libraries"
+					"patching_rect" : [ 822.0, 582.5, 120.0, 60.0 ],
+					"text" : "Click to open folder with asociated\nsoundfile libraries\n(MAC only)"
 				}
 
 			}
@@ -59,7 +59,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 818.0, 600.0, 39.0, 39.0 ]
+					"patching_rect" : [ 778.0, 593.0, 39.0, 39.0 ]
 				}
 
 			}
@@ -310,20 +310,6 @@
 					}
 ,
 					"text" : "coll CNMAT_Pedagogy_Apps_filelookup"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"hidden" : 1,
-					"id" : "obj-12",
-					"linecount" : 5,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1080.0, 231.0, 92.0, 76.0 ],
-					"text" : ";\rmax launchbrowser https://github.com/CNMAT"
 				}
 
 			}
@@ -1260,6 +1246,13 @@
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
 				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/Images",
+				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{
