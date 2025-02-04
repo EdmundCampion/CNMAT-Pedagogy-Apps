@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 8.0, 66.0, 946.0, 656.0 ],
+		"rect" : [ 8.0, 66.0, 983.0, 801.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -164,20 +164,19 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 93.0, 691.0, 189.0, 22.0 ],
-					"text" : "Plucked String Playspace.maxpat"
+					"text" : "symbol \"Tempo Tracker.maxpat\""
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 667.0, 146.0, 35.0 ],
-					"text" : "\"Synthesized Human Voice\""
+					"patching_rect" : [ 15.0, 667.0, 146.0, 22.0 ],
+					"text" : "\"Waveforms and Hearing\""
 				}
 
 			}
@@ -226,8 +225,8 @@
 								"value" : [ "Sound File Interpolation Space.maxpat" ]
 							}
 , 							{
-								"key" : "beat slicing",
-								"value" : [ "Temporal_Beat_Slicer_I-app.maxpat" ]
+								"key" : "Beat Slicing",
+								"value" : [ "Temporal Beat Slicer.maxpat" ]
 							}
 , 							{
 								"key" : "polyrhythms explorer",
@@ -262,8 +261,8 @@
 								"value" : [ "Rhythm_to_Pitch-app.maxpat" ]
 							}
 , 							{
-								"key" : "tempo tracker",
-								"value" : [ "Tempo_Tracker-app.maxpat" ]
+								"key" : "Tempo Tracker",
+								"value" : [ "Tempo Tracker.maxpat" ]
 							}
 , 							{
 								"key" : "Soundscope with Probe Tone",
@@ -943,7 +942,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 500.0, 119.0, 192.0, 64.0 ],
 					"tabcolor" : [ 0.156863, 0.356863, 0.466667, 1.0 ],
-					"tabs" : [ "beat slicing", "polyrhythms explorer", "tempo tracker" ],
+					"tabs" : [ "Beat Slicing", "polyrhythms explorer", "Tempo Tracker" ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -1247,13 +1246,6 @@
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
 				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat_blue.gif",
-				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
-				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/Images",
-				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{
