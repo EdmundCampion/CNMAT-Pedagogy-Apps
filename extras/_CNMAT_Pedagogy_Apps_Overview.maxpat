@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 8.0, 66.0, 983.0, 801.0 ],
+		"rect" : [ 8.0, 66.0, 945.0, 664.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -159,24 +159,26 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-28",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.0, 691.0, 189.0, 22.0 ],
-					"text" : "symbol \"Tempo Tracker.maxpat\""
+					"patching_rect" : [ 93.0, 691.0, 189.0, 35.0 ],
+					"text" : "symbol \"Harmonicity vs Inharmonicity.maxpat\""
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 667.0, 146.0, 22.0 ],
-					"text" : "\"Waveforms and Hearing\""
+					"patching_rect" : [ 15.0, 667.0, 146.0, 35.0 ],
+					"text" : "\"Harmonicity vs. Inharmonicity\""
 				}
 
 			}
@@ -1188,6 +1190,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
+					"hidden" : 1,
 					"order" : 1,
 					"source" : [ "obj-50", 1 ]
 				}
@@ -1246,6 +1249,13 @@
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
 				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/Images",
+				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{

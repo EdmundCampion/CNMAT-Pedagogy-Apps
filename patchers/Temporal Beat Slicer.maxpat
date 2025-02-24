@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1185.0, 344.0, 119.0, 22.0 ],
+					"text" : "receive~ dry_audioR"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -57,8 +69,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1060.0, 344.0, 110.0, 22.0 ],
-					"text" : "receive~ dry_audio"
+					"patching_rect" : [ 1060.0, 344.0, 117.0, 22.0 ],
+					"text" : "receive~ dry_audioL"
 				}
 
 			}
@@ -487,6 +499,7 @@
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "beats_sliced.xml",
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-62",
@@ -645,7 +658,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1024.0, 216.0, 41.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.0, 732.0, 41.0, 27.0 ],
+					"presentation_rect" : [ 16.0, 771.0, 41.0, 27.0 ],
 					"text" : "X13"
 				}
 
@@ -690,7 +703,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 680.0, 8.0, 33.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.0, 420.0, 33.0, 27.0 ],
+					"presentation_rect" : [ 16.0, 459.0, 33.0, 27.0 ],
 					"text" : "X7"
 				}
 
@@ -759,7 +772,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1024.0, 216.0, 332.0, 93.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 724.0, 332.0, 92.0 ],
+					"presentation_rect" : [ 12.0, 763.0, 332.0, 92.0 ],
 					"varname" : "beat-divisor",
 					"viewvisibility" : 1
 				}
@@ -859,7 +872,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 680.0, 188.0, 332.0, 93.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 608.0, 332.0, 92.0 ],
+					"presentation_rect" : [ 12.0, 647.0, 332.0, 92.0 ],
 					"varname" : "beat-divisor[4]",
 					"viewvisibility" : 1
 				}
@@ -963,7 +976,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 680.0, 96.0, 332.0, 93.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 512.0, 332.0, 92.0 ],
+					"presentation_rect" : [ 12.0, 551.0, 332.0, 92.0 ],
 					"varname" : "beat-divisor[6]",
 					"viewvisibility" : 1
 				}
@@ -988,7 +1001,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 680.0, 4.0, 332.0, 93.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 416.0, 332.0, 92.0 ],
+					"presentation_rect" : [ 12.0, 455.0, 332.0, 92.0 ],
 					"varname" : "beat-divisor[7]",
 					"viewvisibility" : 1
 				}
@@ -1188,7 +1201,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 4.0, 376.0, 332.0, 93.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 300.0, 332.0, 92.0 ],
+					"presentation_rect" : [ 12.0, 339.0, 332.0, 92.0 ],
 					"varname" : "beat-divisor[15]",
 					"viewvisibility" : 1
 				}
@@ -1213,7 +1226,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 4.0, 280.0, 332.0, 93.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 204.0, 332.0, 92.0 ],
+					"presentation_rect" : [ 12.0, 243.0, 332.0, 92.0 ],
 					"varname" : "beat-divisor[16]",
 					"viewvisibility" : 1
 				}
@@ -1238,7 +1251,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 4.0, 188.0, 332.0, 93.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 108.0, 332.0, 92.0 ],
+					"presentation_rect" : [ 12.0, 147.0, 332.0, 92.0 ],
 					"varname" : "beat-divisor[17]",
 					"viewvisibility" : 1
 				}
@@ -1263,7 +1276,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 4.0, 96.0, 332.0, 93.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 12.0, 332.0, 92.0 ],
+					"presentation_rect" : [ 12.0, 12.0, 325.0, 122.0 ],
 					"varname" : "beat-divisor[18]",
 					"viewvisibility" : 1
 				}
@@ -1508,7 +1521,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 287.847808999999984, 819.0, 28.956522, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 4.0, 348.0, 396.0 ],
+					"presentation_rect" : [ 4.0, 43.0, 348.0, 396.0 ],
 					"proportion" : 0.39,
 					"rounded" : 24
 				}
@@ -1593,7 +1606,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 370.282623000000001, 819.0, 28.956522, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 408.0, 348.0, 300.0 ],
+					"presentation_rect" : [ 4.0, 447.0, 348.0, 300.0 ],
 					"proportion" : 0.39,
 					"rounded" : 24
 				}
@@ -1610,7 +1623,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 709.0, 413.0, 28.956522, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 716.0, 348.0, 108.0 ],
+					"presentation_rect" : [ 4.0, 755.0, 348.0, 108.0 ],
 					"proportion" : 0.39,
 					"rounded" : 24
 				}
@@ -1730,16 +1743,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-51", 2 ],
-					"order" : 0,
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
-					"order" : 1,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -1867,17 +1871,24 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 1 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CNMAT_logo_ped.png",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tempo Tracker.maxpat",
-				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/extras",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1885,42 +1896,56 @@
 , 			{
 				"name" : "badge2_ped.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "banner_ped.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "beat-divisor_ped.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "clicker-poly.maxpat",
+				"name" : "beats_sliced.xml",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/XML",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/XML",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "clicker-poly_ped.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "clicker~.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/Images",
+				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fixlist.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1931,28 +1956,28 @@
 , 			{
 				"name" : "pe_divmod~.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pstore-simple-storage_ped.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "simple-stereo-gain~_ped.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "uc_license_.maxpat",
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}

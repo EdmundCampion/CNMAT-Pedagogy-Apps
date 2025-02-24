@@ -133,7 +133,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 221.0, 391.0, 30.0, 30.0 ]
 								}
 
@@ -3928,10 +3928,10 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "clavecin_bp_ped.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "", "int", "" ],
 					"patching_rect" : [ 753.0, 477.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 542.0, 371.0, 101.0, 168.0 ],
@@ -4635,11 +4635,11 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"bufsize" : 64,
 									"calccount" : 64,
-									"fgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
-									"gridcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+									"fgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"gridcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"id" : "obj-40",
 									"maxclass" : "scope~",
 									"numinlets" : 2,
@@ -4845,12 +4845,12 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bgfillcolor_angle" : 270.0,
 									"bgfillcolor_autogradient" : 0.79,
 									"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgfillcolor_color1" : [ 1.0, 0.0, 0.0, 1.0 ],
-									"bgfillcolor_color2" : [ 1.0, 0.0, 0.0, 1.0 ],
+									"bgfillcolor_color1" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"bgfillcolor_color2" : [ 0.0, 1.0, 0.0, 1.0 ],
 									"bgfillcolor_proportion" : 0.39,
 									"bgfillcolor_type" : "gradient",
 									"fontname" : "Arial",
@@ -4864,7 +4864,7 @@
 									"patching_rect" : [ 374.5, 153.0, 60.0, 19.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 2.0, 142.0, 65.0, 19.0 ],
-									"text" : "audio off",
+									"text" : "audio on",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -5707,6 +5707,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 2,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
 					"order" : 0,
 					"source" : [ "obj-2", 0 ]
@@ -5987,43 +5995,50 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "CNMAT_logo_ped.png",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "additivepartial.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy/patchers/content/_Courses/Music29/Misc Support",
+				"patcherrelativepath" : "../../CNMAT-Pedagogy/patchers/content/_Courses/Music29/Misc Support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "banner_ped.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "clavecin_bp_ped.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/Images",
+				"type" : "GIFf",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "nothing2.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "uc_license_.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}

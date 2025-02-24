@@ -107,13 +107,13 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "clavecin_bp_ped.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 2,
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int", "" ],
 					"patching_rect" : [ 12.0, 6.0, 102.0, 121.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 656.0, 31.0, 102.0, 121.5 ],
+					"presentation_rect" : [ 656.0, 16.0, 102.0, 165.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -471,7 +471,7 @@
 					"patching_rect" : [ 438.0, 742.0, 138.0, 51.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 20.0, 198.0, 266.0, 29.0 ],
+					"presentation_rect" : [ 20.0, 202.0, 266.0, 29.0 ],
 					"text" : "single events are triggered with the return key\nconstant tones can be triggered with keyboard",
 					"textcolor" : [ 0.984314, 0.776471, 0.607843, 1.0 ]
 				}
@@ -553,7 +553,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 171.5, 764.0, 140.0, 58.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 297.0, 168.0, 147.0, 59.0 ],
+					"presentation_rect" : [ 297.0, 172.0, 147.0, 59.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -689,15 +689,15 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
-					"fontsize" : 10.0,
+					"fontsize" : 14.0,
 					"id" : "obj-119",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 432.0, 764.0, 150.0, 18.0 ],
+					"patching_rect" : [ 432.0, 764.0, 207.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 528.0, 187.0, 133.0, 18.0 ],
-					"text" : "select number of harmonics",
+					"presentation_rect" : [ 492.0, 189.0, 161.0, 22.0 ],
+					"text" : "select number of partials",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -714,7 +714,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 432.0, 786.0, 150.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 459.0, 208.0, 202.0, 18.0 ],
+					"presentation_rect" : [ 451.0, 216.0, 202.0, 18.0 ],
 					"text" : "select fundamental frequency or first partial",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -761,7 +761,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 204.5, 237.0, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 666.0, 208.0, 68.0, 20.0 ],
+					"presentation_rect" : [ 658.0, 216.0, 68.0, 20.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"tricolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -772,19 +772,19 @@
 					"bgcolor" : [ 0.466667, 0.741176, 0.670588, 1.0 ],
 					"fontface" : 0,
 					"fontname" : "Arial",
-					"fontsize" : 10.0,
+					"fontsize" : 14.0,
 					"htricolor" : [ 0.964706, 0.533333, 0.101961, 1.0 ],
 					"id" : "obj-107",
 					"maxclass" : "number",
 					"maximum" : 70,
-					"minimum" : 3,
+					"minimum" : 2,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 360.0, 89.0, 50.0, 20.0 ],
+					"patching_rect" : [ 360.0, 89.0, 58.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 666.0, 186.0, 68.0, 20.0 ],
+					"presentation_rect" : [ 658.0, 188.0, 78.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"tricolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -880,7 +880,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 416.0, 720.0, 138.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 182.0, 139.0, 18.0 ],
+					"presentation_rect" : [ 20.0, 186.0, 139.0, 18.0 ],
 					"text" : "select a type of audio stream",
 					"textcolor" : [ 0.984314, 0.776471, 0.607843, 1.0 ]
 				}
@@ -970,7 +970,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 365.0, 889.0, 71.0 ],
 					"setminmax" : [ 10.0, 22000.0 ],
-					"size" : 3,
+					"size" : 25,
 					"slidercolor" : [ 0.741176, 0.909804, 0.882353, 1.0 ],
 					"spacing" : 4
 				}
@@ -1095,7 +1095,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 20.0, 524.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 168.0, 178.0, 117.0, 20.0 ],
+					"presentation_rect" : [ 168.0, 182.0, 117.0, 20.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -2552,7 +2552,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 588.0, 888.0, 74.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
-					"size" : 3,
+					"size" : 25,
 					"slidercolor" : [ 0.345098, 0.568627, 0.792157, 1.0 ],
 					"spacing" : 4
 				}
@@ -3530,22 +3530,22 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "aux_send_ped.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "clavecin_bp_ped.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "harmonics_ped.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3555,15 +3555,15 @@
 			}
 , 			{
 				"name" : "list-norm-expdecay_ped.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "list-sak.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CNMAT-Pedagogy/patchers/content/_Courses/Music29/Misc Support",
-				"patcherrelativepath" : "../../../Max 8/Packages/CNMAT-Pedagogy/patchers/content/_Courses/Music29/Misc Support",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy/patchers/content/_Courses/Music29/Misc Support",
+				"patcherrelativepath" : "../../CNMAT-Pedagogy/patchers/content/_Courses/Music29/Misc Support",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3573,8 +3573,8 @@
 			}
 , 			{
 				"name" : "simple-stereo-gain~_ped.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3584,8 +3584,8 @@
 			}
 , 			{
 				"name" : "soundscope.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
