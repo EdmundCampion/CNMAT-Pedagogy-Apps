@@ -5708,7 +5708,6 @@
 					"patching_rect" : [ 400.0, 865.0, 77.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 208.0, 702.0, 789.5, 24.0 ],
-					"text" : "•",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
@@ -9147,10 +9146,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 464.0, 360.0, 459.0, 210.0 ],
+													"patching_rect" : [ 464.0, 360.0, 460.0, 210.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 10.0, 12.0, 991.0, 89.0 ],
-													"text" : "•",
 													"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 												}
 
@@ -12577,15 +12575,14 @@
 					"gradient" : 0,
 					"id" : "obj-122",
 					"ignoreclick" : 1,
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 791.0, 123.0, 62.0 ],
+					"patching_rect" : [ 24.0, 791.0, 123.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 75.554648999999998, 975.0, 26.0 ],
-					"text" : "KendrickLamar_untitled02.wav",
+					"text" : "•",
 					"textcolor" : [ 0.002622, 0.058228, 0.339979, 1.0 ]
 				}
 
@@ -13037,11 +13034,11 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+									"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"bufsize" : 64,
 									"calccount" : 64,
-									"fgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"gridcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+									"fgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+									"gridcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"id" : "obj-40",
 									"maxclass" : "scope~",
 									"numinlets" : 2,
@@ -13247,12 +13244,12 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_angle" : 270.0,
 									"bgfillcolor_autogradient" : 0.79,
 									"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgfillcolor_color1" : [ 0.0, 1.0, 0.0, 1.0 ],
-									"bgfillcolor_color2" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"bgfillcolor_color1" : [ 1.0, 0.0, 0.0, 1.0 ],
+									"bgfillcolor_color2" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor_proportion" : 0.39,
 									"bgfillcolor_type" : "gradient",
 									"fontname" : "Arial",
@@ -13266,7 +13263,7 @@
 									"patching_rect" : [ 374.5, 153.0, 60.0, 19.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 2.0, 142.0, 65.0, 19.0 ],
-									"text" : "audio on",
+									"text" : "audio off",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -14814,7 +14811,7 @@
 			}
 , 			{
 				"box" : 				{
-					"filename" : "markermanager.js",
+					"filename" : "markermanagerped.js",
 					"id" : "obj-5",
 					"ignoreclick" : 1,
 					"maxclass" : "jsui",
@@ -17941,8 +17938,8 @@
 , 			{
 				"box" : 				{
 					"automouse" : 0,
-					"coldef" : [ [ 0, 20, 1, 4901321.0, 4901321.0, 4901321.0, 1.0, 1065353216, 0.0, 4901321.0, 4901321.0, 1.0, 1249836799, 1065353216, -1 ], [ 1, 54, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 65, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 625, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"cols" : 4,
+					"coldef" : [ [ 0, 20, 1, 4901321.0, 4901321.0, 4901321.0, 1.0, 1065353216, 0.0, 4901321.0, 4901321.0, 1.0, 1249836799, 1065353216, -1 ] ],
+					"cols" : 1,
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -17959,7 +17956,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 208.0, 159.5, 690.0, 523.5 ],
 					"rowhead" : 1,
-					"rows" : 24,
+					"rows" : 1,
 					"selmode" : 3,
 					"selsync" : 0,
 					"sgcolor" : [ 0.498523, 0.777383, 0.980392, 1.0 ],
@@ -21142,10 +21139,10 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "KendrickLamar_sfPresentation.txt",
-				"bootpath" : "~/Dropbox/__University-things/MUSIC 90/Structural Analysis/LAB-10- sound file presenter tracks",
-				"patcherrelativepath" : "../../../../Dropbox/__University-things/MUSIC 90/Structural Analysis/LAB-10- sound file presenter tracks",
-				"type" : "TEXT",
+				"name" : "cnmat_blue.gif",
+				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/Images",
+				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{
@@ -21155,9 +21152,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "markermanager.js",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"name" : "markermanagerped.js",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -21167,8 +21164,8 @@
 			}
 , 			{
 				"name" : "uc_license_.maxpat",
-				"bootpath" : "~/Documents/Max_Enabled M1/CNMAT Pedagogy Apps/CNMAT_Pedagogy_Applications_2024/x_CNMAT Pedagogy Apps Dependencies",
-				"patcherrelativepath" : "./x_CNMAT Pedagogy Apps Dependencies",
+				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
+				"patcherrelativepath" : "./CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
 				"implicit" : 1
 			}
