@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 8.0, 66.0, 945.0, 664.0 ],
+		"rect" : [ 8.0, 66.0, 954.0, 658.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,132 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-47",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 822.0, 582.5, 120.0, 60.0 ],
-					"text" : "Click to open folder with asociated\nsoundfile libraries\n(MAC only)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.223529411764706, 0.56078431372549, 0.796078431372549, 1.0 ],
-					"id" : "obj-44",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 778.0, 593.0, 39.0, 39.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"hidden" : 1,
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 545.0, 719.0, 67.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"hidden" : 1,
-					"id" : "obj-30",
-					"linecount" : 4,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 545.0, 862.0, 437.0, 62.0 ],
-					"text" : ";\rmax launchbrowser file:///Users/edmundcampionm1/Documents/GitHub/CNMAT-Pedagogy-Apps/extras/../media"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"hidden" : 1,
-					"id" : "obj-32",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 545.0, 824.0, 31.0, 22.0 ],
-					"text" : "t b s"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"hidden" : 1,
-					"id" : "obj-33",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 545.0, 800.0, 243.0, 22.0 ],
-					"text" : "sprintf \\;max launchbrowser file://%s/../media"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"hidden" : 1,
-					"id" : "obj-39",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 545.0, 773.0, 81.0, 22.0 ],
-					"text" : "regexp .+:(.+)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"hidden" : 1,
-					"id" : "obj-40",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 545.0, 749.0, 77.0, 22.0 ],
-					"text" : "absolutepath"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"hidden" : 1,
-					"id" : "obj-42",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 545.0, 695.0, 87.0, 22.0 ],
-					"text" : "loadmess path"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-28",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 93.0, 691.0, 189.0, 35.0 ],
-					"text" : "symbol \"Harmonicity vs Inharmonicity.maxpat\""
+					"patching_rect" : [ 93.0, 691.0, 189.0, 22.0 ],
+					"text" : "Polyrhythms Explorer.maxpat"
 				}
 
 			}
@@ -231,8 +112,8 @@
 								"value" : [ "Temporal Beat Slicer.maxpat" ]
 							}
 , 							{
-								"key" : "polyrhythms explorer",
-								"value" : [ "Polyrhythm_Explorer-app.maxpat" ]
+								"key" : "Polyrhythms Explorer",
+								"value" : [ "Polyrhythms Explorer.maxpat" ]
 							}
 , 							{
 								"key" : "Internal Synth",
@@ -944,7 +825,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 500.0, 119.0, 192.0, 64.0 ],
 					"tabcolor" : [ 0.156863, 0.356863, 0.466667, 1.0 ],
-					"tabs" : [ "Beat Slicing", "polyrhythms explorer", "Tempo Tracker" ],
+					"tabs" : [ "Beat Slicing", "Polyrhythms Explorer", "Tempo Tracker" ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -1066,15 +947,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
-					"hidden" : 1,
-					"midpoints" : [ 602.5, 744.5, 554.5, 744.5 ],
-					"source" : [ "obj-11", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-2", 1 ]
@@ -1114,58 +986,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 1 ],
-					"hidden" : 1,
-					"midpoints" : [ 566.5, 848.5, 972.5, 848.5 ],
-					"source" : [ "obj-32", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"hidden" : 1,
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"hidden" : 1,
-					"source" : [ "obj-39", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"hidden" : 1,
-					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-41", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"hidden" : 1,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"hidden" : 1,
-					"source" : [ "obj-44", 0 ]
 				}
 
 			}
@@ -1249,13 +1072,6 @@
 				"bootpath" : "~/Documents/GitHub/CNMAT-Pedagogy-Apps/patchers/CNMAT Pedagogy Apps Dependencies",
 				"patcherrelativepath" : "../patchers/CNMAT Pedagogy Apps Dependencies",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat_blue.gif",
-				"bootpath" : "~/Documents/GitHub/CNMAT-MMJ-Depot/media/Images",
-				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/media/Images",
-				"type" : "GIFf",
 				"implicit" : 1
 			}
 , 			{
